@@ -1,0 +1,37 @@
+Explicação do Jogo
+O jogo é uma corrida de dragster onde o jogador compete contra uma IA. O objetivo é chegar à linha de chegada antes da IA. O jogador controla a aceleração e as marchas do carro de forma manual, enquanto a IA possui uma lógica de aceleração predefinida que a torna competitiva.
+
+Objetivo do Jogo
+O objetivo principal é atingir a linha de chegada antes do carro controlado pela IA. O jogador deve gerenciar a aceleração e as trocas de marchas de maneira eficiente para maximizar a velocidade e manter o controle do carro.
+
+Controles do Jogador
+Aceleração: O jogador acelera segurando a tecla A.
+Desaceleração: O carro desacelera automaticamente quando a tecla A não está pressionada.
+Troca de Marcha: O jogador pode trocar de marcha pressionando as teclas numéricas de 1 a 6.
+Lógica da IA
+A IA acelera automaticamente e muda de marcha com base em uma lógica competitiva:
+
+A IA aumenta a velocidade até alcançar a velocidade máxima da marcha atual.
+A IA muda de marcha quando a velocidade atinge aproximadamente 90% da velocidade máxima da marcha atual.
+Classe Car
+Define a classe Car com atributos para posição, cor, velocidade, marcha, velocidades máximas por marcha, aceleração e estado de conclusão da corrida.
+
+Métodos:
+
+draw: Desenha o carro na tela.
+update: Atualiza a posição do carro com base na marcha e velocidade.
+Função Intro
+Exibe a tela de introdução onde o jogador pode inserir o comprimento da pista. O jogo é iniciado com os parâmetros inseridos ao clicar no botão "Start".
+
+Função Game Loop
+Função principal do jogo onde ocorre a lógica da corrida:
+
+Inicializa os carros do jogador e da IA com os parâmetros inseridos.
+Controla a aceleração do carro do jogador segurando a tecla A e a troca de marchas com as teclas 1 a 6.
+Atualiza a posição dos carros e verifica se algum carro alcançou a linha de chegada.
+Exibe a marcha atual e a distância percorrida do jogador na tela.
+Verifica se algum carro venceu e exibe a tela de vitória.
+Resumo
+Tela de Introdução: Permite ao jogador definir o comprimento da pista.
+Corrida: O jogador acelera com A e muda de marcha com 1-6. A IA acelera e troca de marcha automaticamente com base em uma lógica predefinida.
+Objetivo: Chegar à linha de chegada antes da IA.
